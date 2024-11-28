@@ -20,6 +20,7 @@ public class StandTest extends BaseTest {
             "Первый экз Фрукт, FRUIT, Фрукт, true",
     })
     public void addVegetablesTest(String name, ProductType type, String expectedType, boolean checkbox)  {
+        BaseTest.name = name;
         WebElement addButton = webDriver.findElement(By.xpath("//button[.=\"Добавить\"]"));
         addButton.click();
         assertElementPresent(wait, By.xpath("//body[@class=\"modal-open\"]"), "форма добавления");
@@ -40,14 +41,6 @@ public class StandTest extends BaseTest {
         webDriver.findElement(By.xpath("//*[@id=\"reset\"]")).click();
 
         assertElementNotPresent(webDriver, addedElement, "добавленный продукт");
-
-        try (PreparedStatement pr = connection.prepareStatement("DELETE FROM FOOD WHERE FOOD_NAME like ?")) {
-            pr.setString(1, name);
-            pr.execute();
-
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
 
     }
 

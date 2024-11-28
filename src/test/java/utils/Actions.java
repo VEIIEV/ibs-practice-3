@@ -36,12 +36,12 @@ public class Actions {
     public static void assertElementNotPresent(WebDriver webDriver, By locator, String elementName) {
         WebElement element = null;
         try {
-            webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+            webDriver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
             element = webDriver.findElement(locator);
         } catch (Exception ignored) {
         } finally {
             webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
-            Assertions.assertNull(element, "Элемент { " + elementName + " } не найден на странице!");
+            Assertions.assertNull(element, "Элемент { " + elementName + " } присутствует на странице!");
         }
     }
 }
