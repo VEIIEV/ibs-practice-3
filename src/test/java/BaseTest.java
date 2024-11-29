@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.FormPage;
+import pages.MainPage;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,6 +20,8 @@ public abstract class BaseTest {
     protected static Connection connection;
     protected static Wait<WebDriver> wait;
     protected static String name;
+    protected static MainPage mainPage;
+    protected static FormPage formPage;
 
     @BeforeAll
     public static void beforeAll() {
@@ -27,6 +31,8 @@ public abstract class BaseTest {
         webDriver.get("http://localhost:8080/food");
         wait = new WebDriverWait(webDriver, Duration.ofSeconds(3));
         connection = DbConfig.getConnection();
+        mainPage = new MainPage(webDriver, wait);
+        formPage = new FormPage(webDriver, wait, mainPage);
     }
 
 
