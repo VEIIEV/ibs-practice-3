@@ -15,7 +15,6 @@ public class DbConfig {
         String url = config.url();
         String username = config.username();
         String password = config.password();
-
         try {
             return DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {

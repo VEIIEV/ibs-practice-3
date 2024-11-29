@@ -26,11 +26,11 @@ public class MainPage {
         return new FormPage(driver, wait, this);
     }
 
-    public MainPage resetData(){
+    public MainPage resetData() {
         driver.findElement(By.xpath("//*[@id=\"navbarDropdown\"]")).click();
 
         driver.findElement(By.xpath("//*[@id=\"reset\"]")).click();
-        return  this;
+        return this;
     }
 
     public MainPage assertElementPresent(By locator, String elementName) {
@@ -45,15 +45,8 @@ public class MainPage {
     }
 
     public MainPage assertElementNotPresent(By locator, String elementName) {
-        WebElement element = null;
-        try {
-            driver.manage().timeouts().implicitlyWait(Duration.ofMillis(0));
-            element = driver.findElement(locator);
-        } catch (Exception ignored) {
-        } finally {
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
-            Assertions.assertNull(element, "Элемент { " + elementName + " } присутствует на странице!");
-        }
+        Assertions.assertTrue(wait.until(ExpectedConditions.invisibilityOfElementLocated(locator)),
+                "Элемент { " + elementName + " } присутствует на странице!");
         return this;
     }
 
