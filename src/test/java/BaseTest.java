@@ -41,10 +41,16 @@ public abstract class BaseTest {
 
     @AfterEach
     public void afterEach() {
-        try (PreparedStatement pr = connection.prepareStatement("DELETE FROM FOOD WHERE FOOD_NAME like ?")) {
+        try (PreparedStatement pr = connection.prepareStatement(
+                "DELETE FROM FOOD " +
+                        "WHERE FOOD_ID = ( " +
+                        "    SELECT MAX(FOOD_ID) " +
+                        "    FROM FOOD " +
+                        "    WHERE FOOD_NAME = ? " +
+                        ")"
+        )) {
             pr.setString(1, name);
             pr.execute();
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
