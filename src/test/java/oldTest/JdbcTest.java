@@ -1,3 +1,5 @@
+package oldTest;
+
 import config.ProductType;
 import daos.FoodDAO;
 import org.junit.jupiter.api.Assertions;

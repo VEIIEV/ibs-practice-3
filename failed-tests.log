@@ -1,0 +1,154 @@
+2024-11-29 18:35:03 [main] ERROR org.junit.jupiter - Тест "[1] Первый Овощ, VEGETABLE, Овощ, false" провалился: Элемент { добавленный продукт } присутствует на странице! ==> expected: <null> but was: <[[ChromeDriver: chrome on windows (35230aba76ea40596d0c664482f772e6)] -> xpath: //tr[td[1]='Первый Овощ' and td[2]='Овощ' and td[3]='false']]>
+2024-11-29 18:35:47 [main] ERROR org.junit.jupiter - Тест "[1] Первый Овощ, VEGETABLE, Овощ, false" провалился: Элемент { добавленный продукт } присутствует на странице! ==> expected: <null> but was: <[[ChromeDriver: chrome on windows (46d840422baa31a268f3a161442c9383)] -> xpath: //tr[td[1]='Первый Овощ' and td[2]='Овощ' and td[3]='false']]>
+2024-11-29 19:46:55 [main] ERROR org.junit.jupiter - Тест "[1] Первый Овощ, VEGETABLE, Овощ, false" провалился: no such element: Unable to locate element: {"method":"css selector","selector":"#myElement"}
+  (Session info: chrome=131.0.6778.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [529f4a0170748d0cbb14e0926ba346bf, findElement {value=myElement, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54937}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54937/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 529f4a0170748d0cbb14e0926ba346bf
+2024-11-29 19:46:55 [main] ERROR org.junit.jupiter - Тест "[2] Первый экз Овощ, VEGETABLE, Овощ, true" провалился: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [529f4a0170748d0cbb14e0926ba346bf, sendKeysToElement {value=[Ljava.lang.CharSequence;@6ac97b84, id=f.6A475A29F64A33E77890560ACFD506EC.d.8D2D569A5674E93F00B10612DACBB16B.e.24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54937}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54937/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (529f4a0170748d0cbb14e0926ba346bf)] -> xpath: //input[@placeholder="Наименование"]]
+Session ID: 529f4a0170748d0cbb14e0926ba346bf
+2024-11-29 19:46:55 [main] ERROR org.junit.jupiter - Тест "[3] Первый Фрукт, FRUIT, Фрукт, false" провалился: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [529f4a0170748d0cbb14e0926ba346bf, findElement {value=//button[.="Добавить"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54937}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54937/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 529f4a0170748d0cbb14e0926ba346bf
+2024-11-29 19:46:55 [main] ERROR org.junit.jupiter - Тест "[4] Первый экз Фрукт, FRUIT, Фрукт, true" провалился: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [529f4a0170748d0cbb14e0926ba346bf, findElement {value=//button[.="Добавить"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54937}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54937/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 529f4a0170748d0cbb14e0926ba346bf
+2024-11-29 19:47:20 [main] ERROR org.junit.jupiter - Тест "[1] Первый Овощ, VEGETABLE, Овощ, false" провалился: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[td[1]='Первый Овощ' and td[2]='Овощ' and td[3]='false']"}
+  (Session info: chrome=131.0.6778.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e8df4433ef4d02a5e34f17df4229fe1, findElement {using=xpath, value=//tr[td[1]='Первый Овощ' and td[2]='Овощ' and td[3]='false']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:48153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:48153/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e8df4433ef4d02a5e34f17df4229fe1
+2024-11-29 19:47:20 [main] ERROR org.junit.jupiter - Тест "[2] Первый экз Овощ, VEGETABLE, Овощ, true" провалился: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e8df4433ef4d02a5e34f17df4229fe1, sendKeysToElement {id=f.95D08FDA0CE04BB8AA2C0703A1D25326.d.9033923BF3BF98C42EE3EA5207A6D6EB.e.24, value=[Ljava.lang.CharSequence;@6ac97b84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:48153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:48153/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2e8df4433ef4d02a5e34f17df4229fe1)] -> xpath: //input[@placeholder="Наименование"]]
+Session ID: 2e8df4433ef4d02a5e34f17df4229fe1
+2024-11-29 19:47:20 [main] ERROR org.junit.jupiter - Тест "[3] Первый Фрукт, FRUIT, Фрукт, false" провалился: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e8df4433ef4d02a5e34f17df4229fe1, findElement {using=xpath, value=//button[.="Добавить"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:48153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:48153/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e8df4433ef4d02a5e34f17df4229fe1
+2024-11-29 19:47:20 [main] ERROR org.junit.jupiter - Тест "[4] Первый экз Фрукт, FRUIT, Фрукт, true" провалился: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e8df4433ef4d02a5e34f17df4229fe1, findElement {using=xpath, value=//button[.="Добавить"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:48153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:48153/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e8df4433ef4d02a5e34f17df4229fe1
+2024-12-01 19:49:41 [main] ERROR org.junit.jupiter - Тест "[1] КОРТОХА, VEGETABLE, false" провалился: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found; SQL statement:
+SELECT count(id) as count FROM product [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1970)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2827)
+	at org.h2.command.Parser.parseSelect(Parser.java:2959)
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649)
+	at org.h2.command.Parser.parseQuery(Parser.java:2620)
+	at org.h2.command.Parser.parsePrepared(Parser.java:868)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:278)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:183)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+2024-12-01 19:50:07 [main] ERROR org.junit.jupiter - Тест "[1] КОРТОХА, VEGETABLE, false" провалился: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" not found; SQL statement:
+SELECT count(id) as count FROM food [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.expression.aggregate.AbstractAggregate.optimize(AbstractAggregate.java:92)
+	at org.h2.expression.aggregate.Aggregate.optimize(Aggregate.java:705)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:278)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:183)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+2024-12-01 19:51:39 [main] ERROR org.junit.jupiter - Тест "[1] КОРТОХА, VEGETABLE, false" провалился: Число продуктов в таблице не соответсвует ожиданиям ==> expected: <5> but was: <4>
+2024-12-01 19:52:14 [main] ERROR org.junit.jupiter - Тест "[1] КОРТОХА, VEGETABLE, false" провалился: Число продуктов в таблице не соответсвует ожиданиям ==> expected: <4> but was: <5>
+2024-12-01 19:53:04 [main] ERROR org.junit.jupiter - Тест "[1] КОРТОХА, VEGETABLE, false" провалился: org.h2.jdbc.JdbcSQLNonTransientException: This method is not allowed for a prepared statement; use a regular statement instead. [90130-224]
+2024-12-01 19:55:34 [main] ERROR org.junit.jupiter - Тест "[1] КОРТОХА, VEGETABLE, false" провалился: Число продуктов в таблице не соответсвует ожиданиям ==> expected: <КОРТОХА VEGETABLE false> but was: <7 КОРТОХА VEGETABLE>
+2024-12-01 19:56:40 [main] ERROR org.junit.jupiter - Тест "[1] КОРТОХА, VEGETABLE, false" провалился: продукт в БД отличается от добавленного ранее ==> expected: <КОРТОХА VEGETABLE false> but was: <КОРТОХА VEGETABLE 0>
+2024-12-01 22:12:55 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>
+2024-12-04 20:26:56 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>
+2024-12-04 20:31:16 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>
+2024-12-04 20:31:22 [main] ERROR org.junit.jupiter - Тест "[2] Первый экз Овощ, VEGETABLE, Овощ, true" провалился: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.87)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b0de44acc7b7ee5a4023b59a2443b72, sendKeysToElement {id=f.73A906456AAF68B4C4B08237FA525A45.d.16EB1F952114D5ED438048131530DBA8.e.23, value=[Ljava.lang.CharSequence;@220be130}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61766/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b0de44acc7b7ee5a4023b59a2443b72)] -> xpath: //input[@placeholder="Наименование"]]
+Session ID: 0b0de44acc7b7ee5a4023b59a2443b72
+2024-12-04 20:31:22 [main] ERROR org.junit.jupiter - Тест "[3] Первый Фрукт, FRUIT, Фрукт, false" провалился: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.87)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b0de44acc7b7ee5a4023b59a2443b72, findElement {using=xpath, value=//button[.="Добавить"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61766/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b0de44acc7b7ee5a4023b59a2443b72
+2024-12-04 20:31:22 [main] ERROR org.junit.jupiter - Тест "[4] Первый экз Фрукт, FRUIT, Фрукт, true" провалился: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.87)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b0de44acc7b7ee5a4023b59a2443b72, findElement {using=xpath, value=//button[.="Добавить"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61766/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b0de44acc7b7ee5a4023b59a2443b72
+2024-12-04 20:34:39 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>
+2024-12-04 20:37:45 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>

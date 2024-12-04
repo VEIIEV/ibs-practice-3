@@ -1,3 +1,5 @@
+package oldTest;
+
 import config.DbConfig;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
