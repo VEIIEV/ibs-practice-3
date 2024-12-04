@@ -3,9 +3,11 @@ import org.junit.jupiter.api.extension.TestWatcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Optional;
+import javax.swing.text.html.HTMLDocument;
+import java.util.*;
 
 public class FailedTestLoggerExtension implements TestWatcher {
+
 
     private static final Logger logger = LoggerFactory.getLogger("org.junit.jupiter");
 
@@ -13,6 +15,9 @@ public class FailedTestLoggerExtension implements TestWatcher {
     public void testFailed(ExtensionContext context, Throwable cause) {
         String testName = context.getDisplayName();
         String errorMessage = Optional.ofNullable(cause.getMessage()).orElse("Без сообщения");
+
+
+
 
         logger.error("Тест \"{}\" провалился: {}", testName, errorMessage);
     }
