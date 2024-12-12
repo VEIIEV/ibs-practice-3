@@ -1,6 +1,7 @@
 package cucumber.hooks;
 
 import config.DbConfig;
+import config.ProjectConfig;
 import cucumber.ScenarioContext;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
@@ -33,7 +34,7 @@ public class WebDriverHook {
     @Before(value = "@JDBC or @UI", order = 20)
     @Пусть("Открыта страница страница со списком товаров")
     public void открытаСтраницаСтраницаСоСпискомТоваров() {
-        scenarioContext.getWebDriver().get("http://localhost:8080/food");
+        scenarioContext.getWebDriver().get(ProjectConfig.getBaseUrl()+"/food");
 
     }
 

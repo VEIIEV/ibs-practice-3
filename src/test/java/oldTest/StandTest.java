@@ -1,10 +1,13 @@
 package oldTest;
 
 import config.ProductType;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.By;
 
+
+@Disabled("old tests")
 public class StandTest extends BaseTest {
 
     @ParameterizedTest
@@ -26,7 +29,6 @@ public class StandTest extends BaseTest {
                 .assertElementPresent(addedElement, "добавленный продукт")
                 .resetData()
                 .assertElementNotPresent(addedElement, "добавленный продукт");
-
 //        WebElement addButton = webDriver.findElement(By.xpath("//button[.=\"Добавить\"]"));
 //        addButton.click();
 //        assertElementPresent(wait, By.xpath("//body[@class=\"modal-open\"]"), "форма добавления");

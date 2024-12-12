@@ -4,10 +4,13 @@ import config.ProductType;
 import daos.FoodDAO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+
+@Disabled("old tests")
 public class JdbcTest extends BaseTest {
 
     protected static FoodDAO foodDAO;

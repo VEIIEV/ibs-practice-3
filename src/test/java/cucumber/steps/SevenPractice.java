@@ -17,6 +17,8 @@ import org.junit.jupiter.api.Assertions;
 
 import java.util.List;
 
+import static config.ProjectConfig.getBaseUrl;
+
 
 @Owner("BotkinKA")
 @Story("Добавление продуктов в таблицу с помощью API")
@@ -50,7 +52,7 @@ public class SevenPractice {
                 dataTable.row(1).get(1),
                 Boolean.parseBoolean(dataTable.row(1).get(2)));
         RestAssured.given()
-                .baseUri("http://localhost:8080")
+                .baseUri(getBaseUrl())
                 .headers(scenarioContext.getBaseHeaders())
                 .header("Content-Type", "application/json")
                 .cookie("JSESSIONID", scenarioContext.getSessionCookie())
@@ -89,7 +91,7 @@ public class SevenPractice {
     @Затем("сбросить данные в таблице \\(API)")
     public void resetDataInDBViaAPI() {
         RestAssured.given()
-                .baseUri("http://localhost:8080")
+                .baseUri(getBaseUrl())
                 .basePath("/api/data/reset")
                 .headers(scenarioContext.getBaseHeaders())
                 .cookie("JSESSIONID", scenarioContext.getSessionCookie())
@@ -104,7 +106,7 @@ public class SevenPractice {
 
     private ValidatableResponse getAllProductResponse() {
         return RestAssured.given()
-                .baseUri("http://localhost:8080")
+                .baseUri(getBaseUrl())
                 .headers(scenarioContext.getBaseHeaders())
                 .cookie("JSESSIONID", scenarioContext.getSessionCookie())
                 .when()

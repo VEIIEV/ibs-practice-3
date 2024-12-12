@@ -1,6 +1,7 @@
 package oldTest;
 
 import config.DbConfig;
+import config.ProjectConfig;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -18,8 +19,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.time.Duration;
 
+import static config.ProjectConfig.getBaseUrl;
 
-@Disabled("old tests")
+
 @ExtendWith(FailedTestLoggerExtension.class)
 public abstract class BaseTest {
 
@@ -35,7 +37,7 @@ public abstract class BaseTest {
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
-        webDriver.get("http://localhost:8080/food");
+        webDriver.get(getBaseUrl()+"/food");
         wait = new WebDriverWait(webDriver, Duration.ofSeconds(3));
         connection = DbConfig.getConnection();
         mainPage = new MainPage(webDriver, wait);

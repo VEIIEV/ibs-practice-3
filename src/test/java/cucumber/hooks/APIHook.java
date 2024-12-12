@@ -6,6 +6,8 @@ import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 
+import static config.ProjectConfig.getBaseUrl;
+
 public class APIHook {
 
 
@@ -14,7 +16,7 @@ public class APIHook {
     public void resetTestData() {
 
         RestAssured.given()
-                .baseUri("http://localhost:8080")
+                .baseUri(getBaseUrl())
                 .basePath("/api/data/reset")
                 .header(new Header("accept", "*/*"))
                 .when()
@@ -27,8 +29,9 @@ public class APIHook {
     @Step("Сброс данных после теста")
     @Before("@API")
     public void resetTestDataAfterTest() {
+
         RestAssured.given()
-                .baseUri("http://localhost:8080")
+                .baseUri(getBaseUrl())
                 .basePath("/api/data/reset")
                 .header(new Header("accept", "*/*"))
                 .when()

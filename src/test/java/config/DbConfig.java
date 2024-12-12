@@ -12,7 +12,7 @@ public class DbConfig {
 
 
     public static Connection getConnection() {
-        String url = config.url();
+        String url = config.dbUrl();
         String username = config.username();
         String password = config.password();
         try {

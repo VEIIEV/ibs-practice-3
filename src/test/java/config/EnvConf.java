@@ -12,5 +12,8 @@ public interface EnvConf  extends Config {
     String password();
 
     @Key("db.url")
-    String url();
+    String dbUrl();
+
+    @Key("base.url")
+    String baseUrl();
 }
