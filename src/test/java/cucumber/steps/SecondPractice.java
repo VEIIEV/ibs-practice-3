@@ -46,7 +46,7 @@ public class SecondPractice {
     @Step("Проверка провала добавления ДУБЛИКАТА")
     @Тогда("продукт  {string} не добавляется в таблицу")
     public void productWontAddInDB(String name) throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(6000);
         Assertions.assertEquals(defaultAmount,
                 foodDAO.count(),
                 "Число продуктов в таблице увеличилось, дубликат был добавлен");

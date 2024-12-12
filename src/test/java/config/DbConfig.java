@@ -8,13 +8,12 @@ import java.sql.SQLException;
 
 public class DbConfig {
 
-    private static final EnvConf config = ConfigFactory.create(EnvConf.class);
 
 
     public static Connection getConnection() {
-        String url = config.dbUrl();
-        String username = config.username();
-        String password = config.password();
+        String url = ConfigLoader.getProperty("db.url");
+        String username = ConfigLoader.getProperty("db.login");
+        String password = ConfigLoader.getProperty("db.password");
         try {
             return DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {

@@ -4,21 +4,20 @@ import org.aeonbits.owner.ConfigFactory;
 
 public class ProjectConfig {
 
-    private static final EnvConf config = ConfigFactory.create(EnvConf.class);
 
     public static String getBaseUrl(){
-        return config.baseUrl();
+        return ConfigLoader.getProperty("base.url");
     }
 
     public static  String getCucumberFilterTags(){
-        return config.cucumberFilterTags();
+        return ConfigLoader.getProperty("cucumber.filter.tags");
     }
 
     public static  String getTestEnv(){
-        return  config.testEnv();
+        return  ConfigLoader.getProperty("test.env");
     }
 
     public static String getSelenoidUrl(){
-        return config.selenoidUrl();
+        return ConfigLoader.getProperty("selenoid.url");
     }
 }
