@@ -152,3 +152,24 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: 0b0de44acc7b7ee5a4023b59a2443b72
 2024-12-04 20:34:39 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>
 2024-12-04 20:37:45 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>
+2024-12-12 20:17:44 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>
+2024-12-12 20:17:57 [main] ERROR org.junit.jupiter - Тест "[3] Первый Фрукт, FRUIT, Фрукт, false" провалился: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.108)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [199c3e1b643e81220e7f42578542d603, sendKeysToElement {id=f.109891FE5771AEC7661C98E5607E3A3F.d.4C2A6518749754802647ABAFC4FB3ED4.e.47, value=[Ljava.lang.CharSequence;@2553dcc0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.108, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63562/devtoo..., se:cdpVersion: 131.0.6778.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (199c3e1b643e81220e7f42578542d603)] -> xpath: //input[@placeholder="Наименование"]]
+Session ID: 199c3e1b643e81220e7f42578542d603
+2024-12-12 20:17:57 [main] ERROR org.junit.jupiter - Тест "[4] Первый экз Фрукт, FRUIT, Фрукт, true" провалился: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.108)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [199c3e1b643e81220e7f42578542d603, findElement {using=xpath, value=//button[.="Добавить"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.108, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\world\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63562/devtoo..., se:cdpVersion: 131.0.6778.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 199c3e1b643e81220e7f42578542d603
+2024-12-12 20:18:56 [main] ERROR org.junit.jupiter - Тест "[1] Яблоко, FRUIT, false" провалился: Число продуктов в таблице увеличилось, дубликат был добавлен ==> expected: <4> but was: <5>

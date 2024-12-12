@@ -16,4 +16,14 @@ public interface EnvConf  extends Config {
 
     @Key("base.url")
     String baseUrl();
+
+    @Key("cucumber.filter.tags")
+    String cucumberFilterTags();
+
+    @Key("test.env")
+    @DefaultValue("local")
+    String testEnv();
+
+    @Key("selenoid.url")
+    String selenoidUrl();
 }

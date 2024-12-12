@@ -9,32 +9,64 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.ru.Пусть;
 import io.qameta.allure.Step;
+import lombok.SneakyThrows;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.URI;
+import java.net.URL;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
+
+import static config.ProjectConfig.*;
+import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class WebDriverHook {
     ScenarioContext scenarioContext;
+    final String env = getTestEnv().toLowerCase();
 
     @Step("Инициализация подключения к БД")
     @BeforeAll
     public static void initConnection() {
+
         ScenarioContext.setConnection(DbConfig.getConnection());
     }
 
+    @SneakyThrows
     @Step("Инициализация контекста и настройка Selenium WebDriver")
     @Before(value = "@JDBC or @UI", order = 10)
     public void webDriverInit() {
         scenarioContext = ScenarioContext.getContext();
-        scenarioContext.setWebDriver(new ChromeDriver());
+
+
+        switch (env) {
+            case "selenoid":
+                DesiredCapabilities capabilities = new DesiredCapabilities();
+                Map<String, Object> selenoidOptions = new HashMap<>();
+
+                capabilities.setBrowserName("chrome");
+                capabilities.setVersion("109.0");
+                selenoidOptions.put("enableVNC", true);
+                selenoidOptions.put("enableVideo", false);
+                capabilities.setCapability("selenoid:options", selenoidOptions);
+                scenarioContext.setWebDriver(new RemoteWebDriver(URI.create(getSelenoidUrl()).toURL(), capabilities));
+                break;
+            case "local":
+                scenarioContext.setWebDriver(new ChromeDriver());
+                break;
+            default:
+                scenarioContext.setWebDriver(new ChromeDriver());
+        }
     }
 
     @Step("Открытие базовой страницы")
     @Before(value = "@JDBC or @UI", order = 20)
     @Пусть("Открыта страница страница со списком товаров")
     public void открытаСтраницаСтраницаСоСпискомТоваров() {
-        scenarioContext.getWebDriver().get(ProjectConfig.getBaseUrl()+"/food");
+        scenarioContext.getWebDriver().get(getBaseUrl() + "/food");
 
     }
 
