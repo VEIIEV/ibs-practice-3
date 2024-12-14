@@ -17,6 +17,7 @@ public class ConfigLoader {
                 throw new IOException("Файл свойств '" + propertiesFileName + "' не найден в classpath");
             }
             properties.load(input);
+            properties.setProperty("cucumber.filter.tags", System.getProperty("TAGS", "@ALL"));
         } catch (IOException ex) {
             ex.printStackTrace();
         }
