@@ -16,8 +16,13 @@
 
         <!-- Java version -->
         <java.version>11</java.version>
+<!--        <tags>@All</tags>-->
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <cucumber.filter.tags>@All</cucumber.filter.tags> <!-- Значение по умолчанию для тегов -->
+        <cucumber.features>src/test/resources/features</cucumber.features> <!-- Путь к вашим feature-файлам -->
+        <cucumber.glue>cucumber.steps,cucumber.hooks</cucumber.glue> <!-- Пакеты для шагов и хуков -->
+
 
     </properties>
 
@@ -141,8 +146,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
+
                 <configuration>
                     <!--                    <testFailureIgnore>false</testFailureIgnore>-->
+
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/*Tests.java</include>
@@ -158,6 +165,10 @@
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                         <junit.jupiter.extensions.autodetection.enabled>true
                         </junit.jupiter.extensions.autodetection.enabled>
+<!--                        <cucumber.filter.tags>${tags}</cucumber.filter.tags>-->
+                        <cucumber.filter.tags>${cucumber.filter.tags}</cucumber.filter.tags>
+                        <cucumber.features>${cucumber.features}</cucumber.features>
+                        <cucumber.glue>${cucumber.glue}</cucumber.glue>
                     </systemPropertyVariables>
                 </configuration>
                 <dependencies>
